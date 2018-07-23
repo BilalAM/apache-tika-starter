@@ -14,7 +14,7 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RandomTikkaUses {
+public class RandomTikkaUtils {
 
 
     private static final Tika TIKA = new Tika();
@@ -29,6 +29,9 @@ public class RandomTikkaUses {
         return metaDataPairs;
     }
 
+    public String getSpecificMetadata(File file , String metaDataName) throws Exception{
+        return getFileMetaData(file).get(metaDataName);
+    }
 
     public static String getFileContentType(File file) throws Exception {
         return TIKA.detect(file);
