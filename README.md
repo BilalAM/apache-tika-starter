@@ -5,3 +5,7 @@ A Project in which Apache Tikka is integrated with ElasticSearch + Kibana
  - To Get The Document And File Data From filesystem
 # Elasticsearch + Kibana
  - To Query and visualize the data
+
+# Sample Screenshots
+ - Images Module Dashboard
+ ![alt](resources/image module.png)
