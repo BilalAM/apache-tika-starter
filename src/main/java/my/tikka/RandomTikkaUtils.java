@@ -29,8 +29,10 @@ public class RandomTikkaUtils {
         return metaDataPairs;
     }
 
-    public String getSpecificMetadata(File file , String metaDataName) throws Exception{
-        return getFileMetaData(file).get(metaDataName);
+    public static String getSpecificMetadata(File file , String metaDataName) throws Exception{
+        Metadata metadata = new Metadata();
+        TIKA.parse(file,metadata);
+        return metadata.get(metaDataName);
     }
 
     public static String getFileContentType(File file) throws Exception {

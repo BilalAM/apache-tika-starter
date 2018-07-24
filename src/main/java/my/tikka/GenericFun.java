@@ -3,11 +3,12 @@ package my.tikka;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
-import java.nio.file.Files;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class GenericFun {
+
 
     /**
      * Returns a list of all .pdfs files authors from a folder
@@ -17,11 +18,16 @@ public class GenericFun {
      */
     public static List<String> getAllPdfsAuthors() throws Exception {
         List<String> authors = new ArrayList<>();
-        File f = new File("/home/bilalam/Documents/");
-        for (File ff : FileUtils.listFiles(f, new String[]{"pdf"}, true)) {
-            authors.add(RandomTikkaUtils.getSpecificMetadata(ff, "Author"));
+        File f = new File("/home/bilalam/Documents/books/books/");
+        Collection<File> pdfFiles = FileUtils.listFiles(f, new String[]{"pdf"}, true);
+        for (File _file : pdfFiles) {
+
+            // long cpu extensive operation
+            authors.add(RandomTikkaUtils.getSpecificMetadata(_file, "producer"));
         }
         return authors;
     }
+
+
 
 }
