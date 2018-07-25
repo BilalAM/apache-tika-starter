@@ -1,6 +1,6 @@
 package my.tikka.elastic;
 
-import my.tikka.RandomTikkaUtils;
+import tikka.RandomTikkaUtils;
 import org.apache.commons.io.FileUtils;
 import org.elasticsearch.action.index.IndexResponse;
 
@@ -10,6 +10,8 @@ import java.util.Map;
 /**
  * A wrapper class to create the metadata of an image (jpg , jpeg or png) to easily send it to kibana
  */
+
+@Deprecated(since = "25th july")
 public class ImageMetaDataSender {
 
     private static final String IMAGES_FOLDER_DIRECTORY = "/home/bilalam/Pictures/";
