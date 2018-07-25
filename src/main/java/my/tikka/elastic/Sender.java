@@ -17,7 +17,7 @@ public class Sender {
 
             IndexResponse response = Singleton
                     .getTransportClient()
-                    .prepareIndex("filesystem", typeName)
+                    .prepareIndex("filesystem-pdfs", typeName)
                     .setSource(metadata)
                     .get();
         } catch (Exception e) {
