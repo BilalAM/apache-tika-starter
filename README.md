@@ -11,5 +11,5 @@ A Project in which Apache Tikka is integrated with ElasticSearch + Kibana
  ![alt](https://github.com/BilalAM/apache-tikka-starter/blob/master/src/main/resources/image%20module.png)
 
  - PDFs Module Dashboard
- ![alt](https://github.com/BilalAM/apache-tikka-starter/blob/master/src/main/resources/pdf%module.png)
+ ![alt](https://github.com/BilalAM/apache-tikka-starter/blob/master/src/main/resources/pdf%20module.png)
 
