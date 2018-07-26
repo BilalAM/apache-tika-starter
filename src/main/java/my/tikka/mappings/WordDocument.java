@@ -1,20 +1,23 @@
 package my.tikka.mappings;
 
+import org.apache.commons.lang.ObjectUtils;
+import org.joda.time.DateTime;
+
 import java.time.LocalDateTime;
 
 /**
- *  I selected the most common and important metadata of a particular word document out of 128 fields !
+ * I selected the most common and important metadata of a particular word document out of 128 fields !
  */
-public class WordDocument implements Mapper {
+public class WordDocument implements Document {
     private String author;
     private String applicationName;
     private String resourceName;
     private long characterCount;
     private long contentLength;
-    private LocalDateTime creationDate;
-    private LocalDateTime lastModifiedDate;
-    private LocalDateTime lastPrintedDate;
-    private LocalDateTime lastSavedDate;
+    private String creationDate;
+    private String lastModifiedDate;
+    private String lastPrintedDate;
+    private String lastSavedDate;
     private int pageCount;
     private long wordCount;
 
@@ -59,35 +62,35 @@ public class WordDocument implements Mapper {
         this.contentLength = contentLength;
     }
 
-    public LocalDateTime getCreationDate() {
+    public String getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(LocalDateTime creationDate) {
+    public void setCreationDate(String creationDate) {
         this.creationDate = creationDate;
     }
 
-    public LocalDateTime getLastModifiedDate() {
+    public String getLastModifiedDate() {
         return lastModifiedDate;
     }
 
-    public void setLastModifiedDate(LocalDateTime lastModifiedDate) {
+    public void setLastModifiedDate(String lastModifiedDate) {
         this.lastModifiedDate = lastModifiedDate;
     }
 
-    public LocalDateTime getLastPrintedDate() {
+    public String getLastPrintedDate() {
         return lastPrintedDate;
     }
 
-    public void setLastPrintedDate(LocalDateTime lastPrintedDate) {
+    public void setLastPrintedDate(String lastPrintedDate) {
         this.lastPrintedDate = lastPrintedDate;
     }
 
-    public LocalDateTime getLastSavedDate() {
+    public String getLastSavedDate() {
         return lastSavedDate;
     }
 
-    public void setLastSavedDate(LocalDateTime lastSavedDate) {
+    public void setLastSavedDate(String lastSavedDate) {
         this.lastSavedDate = lastSavedDate;
     }
 
