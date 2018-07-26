@@ -1,4 +1,8 @@
 package my.tikka.mappings;
 
-public interface Mapper {
+import java.io.File;
+
+public interface Mapper<T> {
+
+    T mapDocumentOf(File _file);
 }
