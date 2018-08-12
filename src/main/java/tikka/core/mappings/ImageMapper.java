@@ -21,10 +21,10 @@ public class ImageMapper implements Mapper {
             imageDocument.setImageWidth(Long.parseLong(metadata.get("tiff:ImageWidth")));
             imageDocument.setModifiedDate(DateTime.parse(metadata.get("Last-Save-Date")).toString());
             imageDocument.setContentType(metadata.get("Content-Type"));
+            imageDocument.setNumberOfTables(Integer.parseInt(metadata.get("Number Of Tables")));
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return imageDocument;
     }
 
