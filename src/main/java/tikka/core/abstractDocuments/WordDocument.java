@@ -1,4 +1,6 @@
-package tikka.core.mappings;
+package tikka.core.abstractDocuments;
+
+import tikka.core.abstractDocuments.Document;
 
 /**
  * I selected the most common and important metadata of a particular word document out of 128 fields !

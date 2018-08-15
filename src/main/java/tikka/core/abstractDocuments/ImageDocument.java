@@ -1,4 +1,6 @@
-package tikka.core.mappings;
+package tikka.core.abstractDocuments;
+
+import tikka.core.abstractDocuments.Document;
 
 public class ImageDocument implements Document {
 
