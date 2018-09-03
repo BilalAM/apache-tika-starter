@@ -9,8 +9,10 @@ public class ImageDocument implements Document {
     private long imageHeight;
     private long imageWidth;
     private String modifiedDate;
+    private String creationDate;
     private String contentType;
-    private int numberOfTables;
+    private String model;
+    private String software;
 
     public String getResourceName() {
         return resourceName;
@@ -52,13 +54,6 @@ public class ImageDocument implements Document {
         this.modifiedDate = modifiedDate;
     }
 
-    public int getNumberOfTables() {
-        return numberOfTables;
-    }
-
-    public void setNumberOfTables(int numberOfTables) {
-        this.numberOfTables = numberOfTables;
-    }
 
     public String getContentType() {
         return contentType;
@@ -66,5 +61,29 @@ public class ImageDocument implements Document {
 
     public void setContentType(String contentType) {
         this.contentType = contentType;
+    }
+
+    public String getCreationDate() {
+        return creationDate;
+    }
+
+    public void setCreationDate(String creationDate) {
+        this.creationDate = creationDate;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getSoftware() {
+        return software;
+    }
+
+    public void setSoftware(String software) {
+        this.software = software;
     }
 }
