@@ -39,10 +39,10 @@ public class RandomTikkaUtils {
         return TIKA.detect(file);
     }
 
-    public String getFileContent(File file) throws Exception {
+    public static String getFileContent(File file) throws Exception {
         Parser parser = new AutoDetectParser();
         InputStream stream = TikaInputStream.get(Paths.get(file.toURI()));
-        BodyContentHandler handler = new BodyContentHandler();
+        BodyContentHandler handler = new BodyContentHandler(-1);
         Metadata metadata = new Metadata();
         ParseContext parseContext = new ParseContext();
 
