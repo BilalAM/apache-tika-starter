@@ -1,10 +1,7 @@
 package tikka.core.abstractDocuments;
 
-import tikka.core.abstractDocuments.Document;
 
-/**
- * I selected the most common and important metadata of a particular word document out of 128 fields !
- */
+
 public class WordDocument implements Document {
     private String author;
     private String applicationName;

@@ -10,6 +10,7 @@ import org.elasticsearch.common.xcontent.XContentType;
 
 import java.io.File;
 
+@SuppressWarnings("ALL")
 public class Sender {
 
     private static void sendIndexMeta(Document document, String typeName, String indexName) {
@@ -17,13 +18,14 @@ public class Sender {
             String responseDocument = new Gson().toJson(document);
             IndexResponse response = Singleton
                     .getTransportClient()
-                    .prepareIndex("filesystem-word", typeName)
+                    .prepareIndex(indexName, typeName)
                     .setSource(responseDocument, XContentType.JSON)
                     .get();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
 
     public static void sendData(Mapper mappingStrategy, Document documentStrategy, String directoryPath, String indexName, String typeName, String... extensions) {
         try {

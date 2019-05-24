@@ -1,7 +1,6 @@
 package tikka.core.mappings;
 
 import org.apache.tika.metadata.Metadata;
-import org.joda.time.DateTime;
 import tikka.RandomTikkaUtils;
 import tikka.core.abstractDocuments.ImageDocument;
 
