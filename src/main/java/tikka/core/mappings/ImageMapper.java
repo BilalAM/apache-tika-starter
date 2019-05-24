@@ -1,11 +1,13 @@
 package tikka.core.mappings;
 
 import org.apache.tika.metadata.Metadata;
-import tikka.RandomTikkaUtils;
 import tikka.core.abstractDocuments.ImageDocument;
+import tikka.core.tika.RandomTikkaUtils;
 
 import java.io.File;
-import java.nio.file.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.nio.file.attribute.BasicFileAttributes;
 
 public class ImageMapper implements Mapper {

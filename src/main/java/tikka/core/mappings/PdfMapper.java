@@ -1,18 +1,16 @@
 package tikka.core.mappings;
 
 import org.apache.tika.metadata.Metadata;
-import org.joda.time.DateTime;
-import org.joda.time.LocalDateTime;
-import tikka.RandomTikkaUtils;
 import tikka.core.abstractDocuments.PdfDocument;
+import tikka.core.tika.RandomTikkaUtils;
 
 import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class PdfMapper implements Mapper {
 

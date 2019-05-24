@@ -1,7 +1,7 @@
 package tikka;
 
 import org.apache.commons.io.FileUtils;
-import tikka.RandomTikkaUtils;
+import tikka.core.tika.RandomTikkaUtils;
 
 import java.io.File;
 import java.util.ArrayList;

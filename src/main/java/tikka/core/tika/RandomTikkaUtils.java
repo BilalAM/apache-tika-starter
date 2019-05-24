@@ -1,4 +1,4 @@
-package tikka;
+package tikka.core.tika;
 
 import org.apache.tika.Tika;
 import org.apache.tika.io.TikaInputStream;

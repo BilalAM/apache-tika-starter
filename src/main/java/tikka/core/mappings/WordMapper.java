@@ -2,12 +2,10 @@ package tikka.core.mappings;
 
 import org.apache.tika.metadata.Metadata;
 import org.joda.time.DateTime;
-import org.joda.time.LocalDateTime;
-import tikka.RandomTikkaUtils;
 import tikka.core.abstractDocuments.WordDocument;
+import tikka.core.tika.RandomTikkaUtils;
 
 import java.io.File;
-import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
