@@ -13,11 +13,14 @@ import java.io.InputStream;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class RandomTikkaUtils {
 
 
     private static final Tika TIKA = new Tika();
+        private static final Logger LOGGER = Logger.getLogger("RandomTikkaUtils");
 
     public static Map<String, String> getFileMetaData(File file) throws Exception {
         Map<String, String> metaDataPairs = new HashMap<>();
@@ -54,9 +57,11 @@ public class RandomTikkaUtils {
     public static Metadata getMetaData(File file) {
         Metadata metadata = new Metadata();
         try {
+                LOGGER.log(Level.INFO, "Initiating parsing process for [ " + file.getName() + " ] ");
             TIKA.parse(file, metadata);
+                LOGGER.log(Level.INFO, "Parsing Process for [ " + file.getName() + " ] has been complete");
         } catch (Exception e) {
-            e.printStackTrace();
+                LOGGER.log(Level.SEVERE, "Error", e);
         }
         return metadata;
     }

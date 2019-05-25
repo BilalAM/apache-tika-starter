@@ -1,107 +1,78 @@
 package tikka.core.abstractDocuments;
 
+public class WordDocument extends AbstractDocument {
 
+        private long characterCount;
+        private String lastPrintedDate;
+        private String lastSavedDate;
+        private int pageCount;
+        private long wordCount;
+        private int imagesCount;
+        private int paragraphsCount;
+        private long linesCount;
 
-public class WordDocument implements Document {
-    private String author;
-    private String applicationName;
-    private String resourceName;
-    private long characterCount;
-    private long contentLength;
-    private String creationDate;
-    private String lastModifiedDate;
-    private String lastPrintedDate;
-    private String lastSavedDate;
-    private int pageCount;
-    private long wordCount;
+        public String getLastPrintedDate() {
+                return lastPrintedDate;
+        }
 
+        public void setLastPrintedDate(String lastPrintedDate) {
+                this.lastPrintedDate = lastPrintedDate;
+        }
 
-    public String getAuthor() {
-        return author;
-    }
+        public String getLastSavedDate() {
+                return lastSavedDate;
+        }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
+        public void setLastSavedDate(String lastSavedDate) {
+                this.lastSavedDate = lastSavedDate;
+        }
 
-    public String getApplicationName() {
-        return applicationName;
-    }
+        public int getPageCount() {
+                return pageCount;
+        }
 
-    public void setApplicationName(String applicationName) {
-        this.applicationName = applicationName;
-    }
+        public void setPageCount(int pageCount) {
+                this.pageCount = pageCount;
+        }
 
-    public String getResourceName() {
-        return resourceName;
-    }
+        public long getWordCount() {
+                return wordCount;
+        }
 
-    public void setResourceName(String resourceName) {
-        this.resourceName = resourceName;
-    }
+        public void setWordCount(long wordCount) {
+                this.wordCount = wordCount;
+        }
 
-    public long getCharacterCount() {
-        return characterCount;
-    }
+        public long getCharacterCount() {
+                return characterCount;
+        }
 
-    public void setCharacterCount(long characterCount) {
-        this.characterCount = characterCount;
-    }
+        public void setCharacterCount(long characterCount) {
+                this.characterCount = characterCount;
+        }
 
-    public long getContentLength() {
-        return contentLength;
-    }
+        public int getImagesCount() {
+                return imagesCount;
+        }
 
-    public void setContentLength(long contentLength) {
-        this.contentLength = contentLength;
-    }
+        public void setImagesCount(int imagesCount) {
+                this.imagesCount = imagesCount;
+        }
 
-    public String getCreationDate() {
-        return creationDate;
-    }
+        public int getParagraphsCount() {
+                return paragraphsCount;
+        }
 
-    public void setCreationDate(String creationDate) {
-        this.creationDate = creationDate;
-    }
+        public void setParagraphsCount(int paragraphsCount) {
+                this.paragraphsCount = paragraphsCount;
+        }
 
-    public String getLastModifiedDate() {
-        return lastModifiedDate;
-    }
+        public long getLinesCount() {
+                return linesCount;
+        }
 
-    public void setLastModifiedDate(String lastModifiedDate) {
-        this.lastModifiedDate = lastModifiedDate;
-    }
-
-    public String getLastPrintedDate() {
-        return lastPrintedDate;
-    }
-
-    public void setLastPrintedDate(String lastPrintedDate) {
-        this.lastPrintedDate = lastPrintedDate;
-    }
-
-    public String getLastSavedDate() {
-        return lastSavedDate;
-    }
-
-    public void setLastSavedDate(String lastSavedDate) {
-        this.lastSavedDate = lastSavedDate;
-    }
-
-    public int getPageCount() {
-        return pageCount;
-    }
-
-    public void setPageCount(int pageCount) {
-        this.pageCount = pageCount;
-    }
-
-    public long getWordCount() {
-        return wordCount;
-    }
-
-    public void setWordCount(long wordCount) {
-        this.wordCount = wordCount;
-    }
+        public void setLinesCount(long linesCount) {
+                this.linesCount = linesCount;
+        }
 }
 
